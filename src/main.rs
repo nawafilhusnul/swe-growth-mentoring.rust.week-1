@@ -1,7 +1,11 @@
 /*
     References: https://leetcode.com/problems/longest-palindrome/
-*/ 
+*/
 use std::collections::HashMap;
+
+use crate::number_utils::predicates::is_odd;
+
+mod number_utils;
 
 fn main() {
     println!("{}", longest_palindrome(String::from("abccccdd"))); // 7
@@ -34,8 +38,4 @@ fn longest_palindrome(s: String) -> i32 {
     }
 
     total_count
-}
-
-fn is_odd(n: i32) -> bool {
-    n % 2 == 1
 }
