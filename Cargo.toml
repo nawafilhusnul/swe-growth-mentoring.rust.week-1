@@ -1,8 +1,8 @@
 [workspace]
 resolver = "3"
 members = [
-    "palindrome",
-    "palindrome-number-utils",
-    "palindrome-string-utils"
-]
+  "palindrome",
+  "palindrome-number-utils",
+  "palindrome-string-utils", 
+  "palindrome-user-input"]
 

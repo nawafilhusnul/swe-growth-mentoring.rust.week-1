@@ -3,14 +3,12 @@
 */
 
 use palindrome_string_utils::longest_palindrome;
+use palindrome_user_input::get_user_input;
 
 fn main() {
-    println!("{}", longest_palindrome(String::from("abccccdd"))); // 7
-    println!("{}", longest_palindrome(String::from("a"))); // 1
-    println!("{}", longest_palindrome(String::from("aAbBABba"))); // 8
-    println!(
-        "{}",
-        longest_palindrome(String::from("wasitacaroracatisaw"))
-    ); // 19
-    println!("{}", longest_palindrome(String::from("bananas"))); // 5
+    let user_input = get_user_input();
+
+    let longest = longest_palindrome(user_input);
+
+    println!("The length of longest palindrome is {longest}")
 }

@@ -5,3 +5,4 @@ edition = "2024"
 
 [dependencies]
 palindrome-string-utils = { path = "../palindrome-string-utils" }
+palindrome-user-input = { path = "../palindrome-user-input" }
