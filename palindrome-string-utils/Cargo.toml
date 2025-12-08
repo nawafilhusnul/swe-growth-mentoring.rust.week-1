@@ -1,0 +1,7 @@
+[package]
+name = "palindrome-string-utils"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+palindrome-number-utils = { path = "../palindrome-number-utils" }

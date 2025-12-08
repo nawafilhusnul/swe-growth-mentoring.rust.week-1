@@ -1,5 +1,6 @@
-use crate::utils::number_utils::predicates::is_odd;
 use std::collections::HashMap;
+
+use palindrome_number_utils::is_odd;
 
 pub fn longest_palindrome(s: String) -> i32 {
     let mut hash_map: HashMap<char, i32> = HashMap::new();
@@ -21,4 +22,15 @@ pub fn longest_palindrome(s: String) -> i32 {
     }
 
     total_count
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = longest_palindrome(String::from("wasitacaroracatisaw"));
+        assert_eq!(result, 19);
+    }
 }

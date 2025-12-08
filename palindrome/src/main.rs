@@ -2,9 +2,7 @@
     References: https://leetcode.com/problems/longest-palindrome/
 */
 
-mod utils;
-
-use utils::string_utils::palindrome::longest_palindrome;
+use palindrome_string_utils::longest_palindrome;
 
 fn main() {
     println!("{}", longest_palindrome(String::from("abccccdd"))); // 7

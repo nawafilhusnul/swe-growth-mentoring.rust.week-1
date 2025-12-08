@@ -1,6 +1,8 @@
-[package]
-name = "week-1"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+resolver = "3"
+members = [
+    "palindrome",
+    "palindrome-number-utils",
+    "palindrome-string-utils"
+]
 
-[dependencies]
