@@ -9,5 +9,6 @@ pub fn get_user_input() -> String {
         .expect("failed to get user input");
 
     println!("Your input string is: {user_input_string}");
-    return user_input_string;
+
+    return user_input_string.trim().to_string();
 }
